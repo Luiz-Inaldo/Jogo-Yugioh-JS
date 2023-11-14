@@ -171,6 +171,8 @@ async function resetDuel(){
 
 async function playAudio(status){
     const audio = new Audio(`./src/assets/audios/${status}.wav`);
+    audio.volume = 0.4;
+    audio.play();
 }
 
 
